@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Genetic Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/plotly-latest.min.js"></script>
+    <script src="js/chance.js"></script>
+    <script src="js/RainbowVis-JS/rainbowvis.js"></script>
+    <script src="js/front.js"></script>
+    <script src="js/fx.js"></script>
+    <script src="js/genetics.js"></script>
+</head>
+
+<body>
+    <!-- Input area -->
+    <div id="inputs" class="container">
+        <h4>Function</h4>
+        <input type="radio" name="fx" id="fx_1" value="1" checked>
+        <img src="img/fx1.png" height="20">
+        <br>
+        <input type="radio" name="fx" id="fx_2" value="2">
+        <img src="img/fx2.png" height="20">
+        <br>
+        <input type="radio" name="fx" id="fx_3" value="3">
+        <img src="img/fx3.png" height="20">
+        <br>
+        <input type="radio" name="fx" id="fx_4" value="4">
+        <img src="img/fx4.png" height="45">
+        <br>
+        <input type="radio" name="fx" id="fx_5" value="5">
+        <img src="img/fx5.png" height="45">
+        <br>
+
+        <h4>max/min</h4>
+        <input type="radio" name="maxmin" id="max" value="1" checked> Maximum
+        <br>
+        <input type="radio" name="maxmin" id="min" value="0"> Minimum
+        <br>
+
+        <h4>Number of chromosomes</h4>
+        <input type="number" id="chromosomes" min=0 value=8>
+
+        <h4>Number of Generations</h4>
+        <input type="number" id="generations" min=0 value=10>
+
+        <h4>Domain</h4>
+        <input type="number" id="l_limit" value=-100>
+        <input type="number" id="r_limit" value=100>
+        <br>
+        <br>
+
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <!-- Output area -->
+    <div id="plotdiv" class="container">
+        <script>
+            plot_fx([], []);
+        </script>
+    </div>
+</body>
+
+</html>

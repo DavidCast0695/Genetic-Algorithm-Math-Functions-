@@ -1,0 +1,17 @@
+.container{
+    position: relative;
+    float: left;
+    padding: 10px;
+}
+
+#inputs{
+    width: 30%;
+}
+
+#outputs{
+    width: 50%;
+}
+
+input[type="number"]{
+    width: 100px;
+}
