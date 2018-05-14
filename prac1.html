@@ -36,10 +36,10 @@
 		<div style="height: 50px"></div>
 
 		<!-- Container -->
-		<div class="container col-11">
-			<div class="row fondo4 align-items-center rounded">
+		<div class="container col-11 shadow p-3 mb-5 bg-white rounded">
+			<div class="row fondo4 justify-content-center rounded">
 				<div id="inputs" class="containera">
-			        <h4>Function</h4>
+			        <h4 class="beautiful">Function</h4>
 			        <input type="radio" name="fx" id="fx_1" value="1" checked>
 			        <img src="img/fx1.png" height="20">
 			        <br>
@@ -54,27 +54,43 @@
 			        <br>
 			        <input type="radio" name="fx" id="fx_5" value="5">
 			        <img src="img/fx5.png" height="45">
+
+			        <br>
 			        <br>
 
-			        <h4>max/min</h4>
-			        <input type="radio" name="maxmin" id="max" value="1" checked> Maximum
+			        <h4 class="beautiful">MAX/min</h4>
+					<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					  <label class="btn btn-secondary active">
+						<input type="radio" name="maxmin" id="max" value="1" autocomplete="off" checked> Maximum
+					  </label>
+					  <label class="btn btn-secondary">
+						<input type="radio" name="maxmin" id="min" value="0" autocomplete="off"> Minimum
+					  </label>
+					</div>
+
 			        <br>
-			        <input type="radio" name="maxmin" id="min" value="0"> Minimum
 			        <br>
 
-			        <h4>Number of chromosomes</h4>
+			        <h4 class="beautiful">Number of chromosomes</h4>
 			        <input type="number" id="chromosomes" min=0 value=8>
 
-			        <h4>Number of Generations</h4>
-			        <input type="number" id="generations" min=0 value=10>
+					<br>
+			        <br>
 
-			        <h4>Domain</h4>
+			        <h4 class="beautiful">Number of Generations</h4>
+			        <input type="number" id="generations" min=0 value=10>
+					
+					<br>
+					<br>
+
+			        <h4 class="beautiful">Domain</h4>
 			        <input type="number" id="l_limit" value=-100>
 			        <input type="number" id="r_limit" value=100>
+
 			        <br>
 			        <br>
 
-			        <button onclick="calculate()">Calculate</button>
+			        <button onclick="calculate()" class="btn btn-outline-dark">Calculate</button>
 			    </div>
 
 			    <!-- Output area -->

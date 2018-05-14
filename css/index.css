@@ -18,7 +18,7 @@ input[type="number"]{
 	width: 100px;
 }
 
-/* style plantilla */
+/* Fonts style */
 
 @font-face {
 	font-family: "Campotype";
@@ -48,6 +48,16 @@ input[type="number"]{
 .brilliant {
 	font-family: "Brilliant Signature";
 	font-size: 350%;
+}
+
+@font-face {
+	font-family: "Beautiful People";
+	src: url("../font/Beautiful People.ttf");
+}
+
+.beautiful {
+	font-family: "Beautiful People";
+	font-size: 200%;
 }
 
 .card-img-top {
