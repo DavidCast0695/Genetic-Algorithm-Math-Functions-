@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "Campotype";
+	src: url("../font/Campotype.otf");
+}
+
+.campotype {
+	font-family: "Campotype";
+	font-size: 800%;
+	text-shadow: 2px 2px 2px blue;
+}
+
+@font-face {
+	font-family: "The Jacklyn";
+	src: url("../font/The Jacklyn.ttf");
+}
+
+.jacklyn {
+	font-family: "The Jacklyn";
+	font-size: 450%;
+}
+
+@font-face {
+	font-family: "Brilliant Signature";
+	src: url("../font/Brilliant Signature.otf");
+}
+
+.brilliant {
+	font-family: "Brilliant Signature";
+	font-size: 350%;
+}
