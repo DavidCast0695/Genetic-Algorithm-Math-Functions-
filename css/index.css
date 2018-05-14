@@ -6,7 +6,7 @@
 .campotype {
 	font-family: "Campotype";
 	font-size: 800%;
-	text-shadow: 2px 2px 2px blue;
+	text-shadow: 2px 2px 2px #41eeeb;
 }
 
 @font-face {
@@ -16,7 +16,6 @@
 
 .jacklyn {
 	font-family: "The Jacklyn";
-	font-size: 450%;
 }
 
 @font-face {
@@ -27,4 +26,25 @@
 .brilliant {
 	font-family: "Brilliant Signature";
 	font-size: 350%;
+}
+
+.card-img-top {
+  width: 30%;
+  /* border-top-left-radius: calc(0.25rem - 1px); */
+  /* border-top-right-radius: calc(0.25rem - 1px); */
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background: transparent;
+  /* background-color: #fff; */
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.25rem;
 }
