@@ -1,3 +1,25 @@
+/* Style practice */
+
+.containera{
+	position: relative;
+	float: left;
+	padding: 10px;
+}
+
+#inputs{
+	width: 30%;
+}
+
+#outputs{
+	width: 50%;
+}
+
+input[type="number"]{
+	width: 100px;
+}
+
+/* style plantilla */
+
 @font-face {
 	font-family: "Campotype";
 	src: url("../font/Campotype.otf");
