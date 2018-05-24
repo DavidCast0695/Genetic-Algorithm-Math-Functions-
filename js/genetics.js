@@ -54,7 +54,7 @@ class Chromosome {
 
     }
 
-    /* 
+    /*
      * Utility function for the constructor. Converts an integer
      * to a bit array with the most significant bit is at index 0.
      */
@@ -70,7 +70,7 @@ class Chromosome {
         return bitarray;
     }
 
-    /* 
+    /*
      * Initializes the fixed size for all chromosomes so they can reproduce
      * uniformly with other chromosomes within the same function.
      */
@@ -94,7 +94,7 @@ function genetic_search(fx, maxmin, nchrom, ngen, llim, rlim) {
     var keyfunc = (maxmin ? maxsort : minsort);
     var gen = [];
 
-    // Plot lists   
+    // Plot lists
     var genX = [];
     var genY = [];
     var tempX;
@@ -172,10 +172,13 @@ function genetic_search(fx, maxmin, nchrom, ngen, llim, rlim) {
         }
     }
 
-    plot_fx(genX, genY);
+    var genAuxX= [genX[genX.length - 3], genX[genX.length - 2], genX[genX.length - 1]];
+    var genAuxY= [genY[genY.length - 3], genY[genY.length - 2], genY[genY.length - 1]];
+
+    plot_fx(genAuxX, genAuxY);
 }
 
-/* 
+/*
  * Returns a list a chromosomes.
  */
 function populate(amount, chsize, llim, rlim) {
@@ -190,7 +193,7 @@ function populate(amount, chsize, llim, rlim) {
     return result;
 }
 
-/* 
+/*
  * Comparing functions for sortting methods.
  */
 function maxsort(ch1, ch2) {
